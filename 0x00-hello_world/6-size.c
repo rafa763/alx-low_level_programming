@@ -4,7 +4,7 @@
  *
  * description: 'print various type sizes'
  *
- * return: always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
