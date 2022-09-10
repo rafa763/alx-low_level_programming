@@ -20,7 +20,7 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-					if (j <= l && i <= k)
+					if ((i == k && j < l) || (i < k))
 					{
 					if (i != k || j != l)
 					{
