@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ * print_alphabet - entry point
+ *
  * description: 'print alphabet followed by new line'
  *
  * Return: Void
