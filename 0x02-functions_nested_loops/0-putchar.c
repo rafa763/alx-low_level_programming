@@ -8,6 +8,10 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int i = 0;
+	char str[] = "_putchar";		
+	for (i = 0; i != '\0'; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 	return (0);
 }
