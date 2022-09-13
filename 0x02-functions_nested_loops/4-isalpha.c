@@ -1,7 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower - entry point
+ * _isalpha - check is letter is alphabetical
  *
  * @c: char to be checked
  *
