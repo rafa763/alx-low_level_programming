@@ -2,20 +2,17 @@
 /**
  * main - Entry point
  *
- * description: 'program that prints _putchar, followed by a new line.'
+ * description: 'print string'
  *
- * Retur: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = 0;
-	char c;
-	char str[] = "_putchar";		
-	for (i = 0; i != '\0'; i++)
-	{
-		c = str[i];
-		_putchar(c);
-	}
+	int i;
+	char str[] = "_putchar";
+
+	for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
 	_putchar('\n');
 	return (0);
 }
