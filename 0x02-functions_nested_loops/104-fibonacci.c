@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	unsigned long int i, t1 = 1, t2 = 2, next;
+	unsigned long int i, t1 = 0, t2 = 1, next;
 
 	printf("%lu, %lu, ", t1, t2);
 	next = t1 + t2;
-	for (i = 3; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		printf("%lu", next);
 		t1 = t2;
