@@ -9,16 +9,17 @@
 int main(void)
 {
 	long int a = 1, b = 1, total = 0, q;
-       while (b < 4000000)
-       {
-	       if (b % 2 == 0)
-	       {
-		       total += b;
-	       }
-	       q = b;
-	       b += a;
-	       a = q;
-       }
-       printf("%ld\n", total);
-       return (0);
+
+	while (b < 4000000)
+	{
+		if (b % 2 == 0)
+		{
+			total += b;
+		}
+		q = b;
+		b += a;
+		a = q;
+	}
+	printf("%ld\n", total);
+	return (0);
 }
