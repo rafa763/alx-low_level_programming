@@ -8,16 +8,17 @@
  */
 int main(void)
 {
-	long int a = 1, b = 1, total = 0;
-       while (a < 4000000)
+	long int a = 1, b = 1, total = 0, q;
+       while (b < 4000000)
        {
-       		if (a % 2 == 0)
-		{
-			total += a;
-		}
-		a = b;
-		b = a + b;
+	       if (b % 2 == 0)
+	       {
+		       total += b;
+	       }
+	       q = b;
+	       b += a;
+	       a = q;
        }
        printf("%ld\n", total);
-	return (0);
+       return (0);
 }
