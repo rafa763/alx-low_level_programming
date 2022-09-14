@@ -10,7 +10,7 @@ int main(void)
 {
 	int sum = 0, num = 1023;
 
-	while(num != 0)
+	while (num != 0)
 	{
 		if (num % 3 == 0 || num % 5 == 0)
 			sum += num;
