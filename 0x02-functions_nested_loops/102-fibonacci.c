@@ -10,15 +10,15 @@ int main(void)
 {
 	long int i, t1 = 1, t2 = 2, next;
 
-	printf("%ld %ld\n", t1, t2);	
+	printf("%ld, %ld, ", t1, t2);
 	next = t1 + t2;
-	for (i = 3; i < 50; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		printf("%ld", next);
 		t1 = t2;
 		t2 = next;
 		next = t1 + t2;
-		if (i != 49)
+		if (i != 50)
 			printf(", ");
 	}
 	printf("\n");
