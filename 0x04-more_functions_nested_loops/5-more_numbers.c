@@ -14,7 +14,6 @@ void more_numbers(void)
 		{
 			u = j % 10;
 			t = j / 10;
-		
 			if (t != 0)
 				_putchar('0' + t);
 			_putchar('0' + u);
