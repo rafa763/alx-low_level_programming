@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	int n = 612852475143, i, c = 0;
+	long int n = 612852475143, i, c = 0;
 
 	while (n % 2 == 0)
 	{
@@ -21,6 +21,6 @@ int main(void)
 		}
 	}
 
-	printf("%d\n", c);
+	printf("%ld\n", c);
 	return (0);
 }
