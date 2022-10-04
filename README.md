@@ -1,11 +1,5 @@
 # Holberton C traning 
 
-### 0x00
-done
-### 0x01
-done
 ### 0x02
 16
-### 0x03
-done
-### 0x04
+### 0x04 -now at
