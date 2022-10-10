@@ -9,13 +9,17 @@
 char *rot13(char *str)
 {
 	char *result = str;
+	int i;
+	char orgn[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rotated[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*str)
 	{
-		if (*str >= 'a' && *str <= 'z')
-			*str = 'a' + (*str - 97 + 13) % 26;
-		if (*str >= 'A' && *str <= 'Z')
-			*str = 'A' + (*str - 65 + 13) % 26;
+		for (i = 0; orgn[i]; i++)
+		{
+			if (*str == rotated[i])
+				*str = rotated[i];
+		}
 		str++;
 	}
 	return (result);
