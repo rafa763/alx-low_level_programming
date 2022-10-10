@@ -15,10 +15,13 @@ char *rot13(char *str)
 
 	while (*str)
 	{
-		for (i = 0; orgn[i]; i++)
+		for (i = 0; orgn[i] != '\0'; i++)
 		{
-			if (*str == rotated[i])
+			if (*str == orgn[i])
+			{
 				*str = rotated[i];
+				break;
+			}
 		}
 		str++;
 	}
