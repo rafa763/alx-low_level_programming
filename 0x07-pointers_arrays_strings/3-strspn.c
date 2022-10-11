@@ -1,17 +1,27 @@
 #include "main.h"
-#include <string.h>
 /**
  * *_strspn - get length of prefix substring
  *
  * @s: number of bytes
  * @accept: string
  *
- * Return: *s
+ * Return: Int
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int len;
+	int i, count = 0, brk = 0;
 
-	len = strspn(s, accept);
-	return (len);
+	while (*s)
+	{
+		for (i = 0; accept[i] != '\0'; i++)
+		{
+			if (*s == accept[i])
+				count++;
+		}
+		brk++;
+		s++;
+		if (brk != count)
+			break;
+	}
+	return (count);
 }
