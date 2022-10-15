@@ -4,7 +4,7 @@
  * _calloc - allocate memory for array and initialize it to zero
  *
  * @nmemb: number of elements
- * size: number of bytes
+ * @size: number of bytes
  *
  * Return: Void
  */
