@@ -24,10 +24,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!ptr)
 		return (NULL);
 	str = ptr;
-	while (*s1)
+	while (*s1++)
 		*ptr++ = *s1++;
-	while (*s2 && n--)
+	while (*s2++ && n--)
 		*ptr++ = *s2++;
-	ptr = '\0';
 	return (str);
 }
