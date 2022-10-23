@@ -28,6 +28,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*ptr++ = *s1++;
 	while (*s2 && n--)
 		*ptr++ = *s2++;
-	*ptr++ = '\0';
+	*ptr = '\0';
 	return (str);
 }
