@@ -10,6 +10,8 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int pos = 1, num = 0, s = 0;
 
+	if (!b)
+		return (0);
 	while (b[s])
 		s++;
 	while (s--)
@@ -17,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[s] != '0' && b[s] != '1')
 			return (0);
 		if (b[s] == '1')
-			num = num + pos;
+			num += pos;
 		pos *= 2;
 	}
 	return (num);
