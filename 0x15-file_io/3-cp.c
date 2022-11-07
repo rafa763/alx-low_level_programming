@@ -14,7 +14,7 @@
  */
 int main(int argc, char **argv)
 {
-	int fd1, fd2, stat1, stat2, c1, c2;
+	int fd1, fd2, stat1 = 1, stat2, c1, c2;
 	char *buffer;
 
 	if (argc < 3)
@@ -37,8 +37,9 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 	buffer = malloc(sizeof(char) * 1024);
-	while ((stat1 = read(fd1, buffer, 1024)) > 0)
+	while (stat1 > 0)
 	{
+		stat1 = read(fd1, buffer, 1024);
 		if (stat1 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
