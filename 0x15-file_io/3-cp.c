@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 			return (98);
 		}
-		stat2 = write(fd2, buffer, 1024);
+		stat2 = write(fd2, buffer, stat1);
 		if (stat2 == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
