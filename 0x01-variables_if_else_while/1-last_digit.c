@@ -21,7 +21,7 @@ int main(void)
 	x = n % 10;
 	printf("Last digit of %d is %d ", n, x);
 	if (x == 0)
-		printf("is 0 and is 0");
+		printf("and is 0");
 	else
 		(n > 5) ? printf("%s", l) : printf("%s", s);
 	return (0);
