@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_nubers - Entry point
+ * print_numbers - Entry point
  *
  * description: print numbers from 0 to 9
  *
