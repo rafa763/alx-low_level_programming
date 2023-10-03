@@ -8,14 +8,10 @@
  */
 int _strlen(char *s)
 {
-	int i;
+	const char *str = s;
 
-	i = 0;
-	while (*s)
-	{
-		i++;
-		s++;
-	}
+	while (*str)
+		++str;
 
-	return (i);
+	return (str - s);
 }
