@@ -18,8 +18,12 @@ char *_strpbrk(char *s, char *accept)
 		accept++;
 	}
 
-	while (*s++ && !chars[(int)*s++])
-		return (s);
+	while (*s)
+	{
+		if (chars[(int)*s])
+			return (s);
+		s++;
+	}
 
 	return (NULL);
 }
