@@ -25,10 +25,10 @@ unsigned int _strspn(char *s, char *accept)
 
 		brk++;
 		accept = p;
-		
+
 		if (i != brk)
 			break;
 	}
 
 	return (i);
-}	
+}
