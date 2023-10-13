@@ -101,7 +101,7 @@ void print_string(va_list ap)
 {
 	char *str = va_arg(ap, char*);
 
-	if (!*str)
+	if (!str)
 		str = "(nil)";
 	printf("%s", str);
 }
