@@ -19,17 +19,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (!temp || !str)
 		return (NULL);
 
-	temp->str = malloc(strlen(str));
+	temp->str = strdup(str);
+	temp->len = strlen(str);
+	temp->next = NULL;
 
 	if (!temp->str)
 	{
 		free(temp);
 		return (NULL);
 	}
-
-	temp->str = strdup(str);
-	temp->len = strlen(str);
-	temp->next = NULL;
 
 	if (*head == NULL)
 	{
