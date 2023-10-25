@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * reverse_listint - reverses a listint_t linked list.
@@ -9,6 +10,9 @@
 listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *p1, *p2;
+
+	if (!head || !*head)
+		return (NULL);
 
 	p1 = NULL;
 	p2 = *head;
