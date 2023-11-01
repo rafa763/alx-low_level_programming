@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	c = close(fd1)
+	c = close(fd1);
 	if (c == -1 || close(fd2) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s",
